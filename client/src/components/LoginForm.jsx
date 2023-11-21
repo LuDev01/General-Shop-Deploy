@@ -5,7 +5,7 @@ import CarrouselLogIn from './CarrouselLogIn';
 import Form from "react-bootstrap/Form";
 import Logo from "./assets/GeneralShopLogo.png";
 import { BsFillEyeFill, BsFillEyeSlashFill } from "react-icons/bs";
-import {bcrypt} from 'bcryptjs';
+import bcrypt from 'bcryptjs';
 
 
 
