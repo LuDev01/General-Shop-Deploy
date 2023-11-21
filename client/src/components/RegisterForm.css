@@ -1,0 +1,67 @@
+.custom-border{
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px -10px var(--orange-second);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70vw;
+    margin: 1rem auto;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.signUp-title{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--orange-second);
+}
+
+.logo-img-signup{
+    height: 100px;
+}
+
+.submit-button{
+    cursor: pointer;
+}
+
+.sign-in-text{
+    color: var(--orange-second);
+    text-decoration: none;
+}
+
+.login-link{
+    margin-top:1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.error-message{
+    color: red;
+}
+
+@media( width >= 760px){
+    .custom-border{
+        width: 40vw;
+    }
+
+    .login-link{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .sign-in-p{
+        margin: 0;
+    }
+
+    .sign-in-text{
+        margin-left: 1rem;
+    }
+
+}
