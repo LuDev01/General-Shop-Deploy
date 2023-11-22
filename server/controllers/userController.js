@@ -26,23 +26,25 @@ const controllers = {
       delete req.body.confirmPassword;
       req.body.confirmPassword = confirmPassword;
 
-      const authToken=(User)=>{
-        const secretKey=process.env.JWT_SECRET_KEY;
-        const token=Jwt.sign({
-          _id:User._id,
-          email:User.email
-        },
-        secretKey
-        );
-        return token;
-      }
+      // const authToken=(User)=>{
+      //   const secretKey=process.env.JWT_SECRET_KEY;
+      //   const token=Jwt.sign({
+      //     _id:User._id,
+      //     email:User.email
+      //   },
+      //   secretKey
+      //   );
+      //   return token;
+      // }
 
       const newUser = await User.create({ ...req.body }); //Creates a new user using the User.create method, which is likely a Mongoose method for adding a new document to the "Users" collection.
+
       res.json({ status: "200", user: newUser }); //Sends a JSON response indicating success (status 200) and includes the newly created user in the response.
      
-      User=await User.save ();
-      const token=authToken(User);
-      res.json(token);
+
+      // User=await User.save ();
+      // const token=authToken(User);
+      // res.json(token);
    
     } catch (error) {
       //Catches any errors that may occur during user creation and sends a JSON response with an error message.
