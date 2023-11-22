@@ -62,7 +62,7 @@ export const LoginForm = () => {
 
   // // Send the request to the server
   
-  fetch('http://localhost:5000/login', {
+  fetch('https://general-shop-deploy.vercel.app/login', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -89,7 +89,7 @@ export const LoginForm = () => {
 
     if (!errors.email && !errors.passw) {
       // Here we only continue if there are no validation errors
-      fetch('http://localhost:5000/login', {
+      fetch('https://general-shop-deploy.vercel.app/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

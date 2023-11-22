@@ -114,7 +114,7 @@ export const RegisterForm = () => {
               alert("Created user");
 
               // Send the POST request to the server only if the email does not exist
-              fetch('http://localhost:5000/register', {
+              fetch('https://general-shop-deploy.vercel.app/register', {
                   method: 'POST',
                   headers: {
                       'Content-Type': 'application/json',
